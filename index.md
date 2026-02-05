@@ -9,7 +9,7 @@ permalink: /
   
   <div style="flex: 1; min-width: 300px;">
     <h2 style="margin-top: 0;">Solving Complex Data Challenges</h2>
-    <p style="font-size: 1.2rem; line-height: 1.4; color: var(--secondary); font-weight: 700;">
+    <p style="font-size: 2.2rem; line-height: 1.4; color: var(--secondary); font-weight: 800;">
       Dr. Roman Baravalle, PhD.
     </p>
     <p>
