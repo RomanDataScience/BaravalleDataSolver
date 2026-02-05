@@ -19,7 +19,17 @@ permalink: /
 </div>
 
 <hr style="border: 0; height: 1px; background: #e6ebf1; margin: 40px 0;">
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Roman Baravalle",
+  "jobTitle": "Data Solver & Neuroscientist",
+  "degree": "Ph.D. in Physics",
+  "url": "https://romandatascience.github.io/BaravalleDataSolver/",
+  "description": "Expert Data Solver and Neuroscientist specializing in complex data analysis, management, and automation."
+}
+</script>
 ### My Expertise
 
 <div class="services-grid">
