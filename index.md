@@ -4,16 +4,26 @@ title: Home
 permalink: /
 ---
 
-## Empowering TEAMS to own their data journey
+## Solving Complex Data Challenges
+**Guiding teams into advanced analysis... and empowering people to carry it forward.**
 
-**Guiding teams into complex data analysis... and empowering people to carry it forward on their own.**
+I translate advanced computational methods into accessible insights. My focus is on **integrity**, **clarity**, and **independence**.
 
-I break down the barriers of complex data analysis, helping teams confidently explore, apply, and advance the latest methods.
+<div class="services-grid">
+  <div class="service-card">
+    <h3>Data Management</h3>
+    <p>Building robust foundations for reliable, clean, and scalable data environments.</p>
+  </div>
+  <div class="service-card">
+    <h3>Data Analysis</h3>
+    <p>Deep statistical modeling and predictive analytics to drive strategy.</p>
+  </div>
+  <div class="service-card">
+    <h3>Data Automation</h3>
+    <p>Eliminating manual tasks with custom Python and R orchestration.</p>
+  </div>
+</div>
 
-### My Core Principles
+<br>
 
-* **Data Empowerment:** True impact comes when people can own their data journey. Every project is a collaboration designed to build lasting skills and confidence.
-* **Clarity in Complexity:** By translating advanced computational and statistical methods into accessible insights, I help teams unlock the full potential of their data.
-* **Integrity in Collaboration:** I work side by side with clients, valuing transparency, reproducibility, and open communication.
-
-[See My Services]({{ '/services/management' | relative_url }}){: .cta-button}
+[View Full Services]({{ '/services/management' | relative_url }}){: .cta-button}
