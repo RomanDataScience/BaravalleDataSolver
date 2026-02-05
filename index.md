@@ -4,26 +4,40 @@ title: Home
 permalink: /
 ---
 
-## Solving Complex Data Challenges
-**Guiding teams into advanced analysis... and empowering people to carry it forward.**
-
-I translate advanced computational methods into accessible insights. My focus is on **integrity**, **clarity**, and **independence**.
-
-<div class="services-grid">
-  <div class="service-card">
-    <h3>Data Management</h3>
-    <p>Building robust foundations for reliable, clean, and scalable data environments.</p>
-  </div>
-  <div class="service-card">
-    <h3>Data Analysis</h3>
-    <p>Deep statistical modeling and predictive analytics to drive strategy.</p>
-  </div>
-  <div class="service-card">
-    <h3>Data Automation</h3>
-    <p>Eliminating manual tasks with custom Python and R orchestration.</p>
+<div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap; margin-bottom: 40px;">
+  <img src="{{ '/assets/ProfilePicture.png' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background-color: white;">
+  
+  <div style="flex: 1; min-width: 300px;">
+    <h2 style="margin-top: 0;">Solving Complex Data Challenges</h2>
+    <p style="font-size: 1.2rem; line-height: 1.4; color: var(--secondary); font-weight: 700;">
+      Dr. Roman Baravalle, PhD.
+    </p>
+    <p>
+      Guiding teams into advanced analysis... and empowering people to carry it forward on their own. I translate complex data landscapes into actionable strategies.
+    </p>
   </div>
 </div>
 
-<br>
-![Dr. Roman Baravalle]({{ '/assets/profile.jpg' | relative_url }})
-[View Full Services]({{ '/services/management' | relative_url }}){: .cta-button}
+<hr style="border: 0; height: 1px; background: #e6ebf1; margin: 40px 0;">
+
+### My Expertise
+
+<div class="services-grid">
+  <div class="service-card">
+    <h3 style="margin-top:0;">📊 Data Management</h3>
+    <p>Building robust foundations for reliable, clean, and scalable data environments. Ensuring your data is "analysis-ready."</p>
+  </div>
+  <div class="service-card">
+    <h3 style="margin-top:0;">🧪 Data Analysis</h3>
+    <p>Deep statistical modeling, hypothesis testing, and predictive analytics to drive evidence-based strategy.</p>
+  </div>
+  <div class="service-card">
+    <h3 style="margin-top:0;">🤖 Data Automation</h3>
+    <p>Eliminating manual tasks with custom Python and R orchestration. Focus on reproducibility and efficiency.</p>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 40px;">
+  <p><em>"True impact comes when people can own their data journey."</em></p>
+  <a href="{{ '/services/management' | relative_url }}" class="cta-button">Explore My Services</a>
+</div>
