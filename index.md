@@ -25,5 +25,5 @@ I translate advanced computational methods into accessible insights. My focus is
 </div>
 
 <br>
-
+![Dr. Roman Baravalle]({{ '/assets/profile.jpg' | relative_url }})
 [View Full Services]({{ '/services/management' | relative_url }}){: .cta-button}
