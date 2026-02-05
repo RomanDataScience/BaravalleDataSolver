@@ -6,30 +6,55 @@
   {% seo %}
   
   <style>
-    /* CSS Variables for colors */
+    /* CSS Variables for a professional, vibrant palette */
     :root {
-      --primary: #0070f3;
-      --secondary: #0a2540;
-      --bg-light: #f6f9fc;
+      --primary: #0070f3;      /* Vibrant Blue */
+      --secondary: #0a2540;    /* Trust Navy */
+      --bg-light: #f6f9fc;     /* Soft Grey Background */
+      --text-main: #425466;    /* Readable Slate */
     }
 
-    /* Basic Reset */
     body { 
       margin: 0; 
       padding: 0; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
       line-height: 1.6;
-      color: #425466;
-      background-color: var(--bg-light); /* This is the light gray background */
+      color: var(--text-main);
+      background-color: var(--bg-light);
     }
 
+    /* Header with Logo and Title */
     header {
       background: var(--secondary);
-      padding: 40px 20px;
+      padding: 20px;
       color: white;
-      text-align: center;
+      border-bottom: 4px solid var(--primary);
     }
 
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .site-logo {
+      height: 50px;
+      width: auto;
+      display: block;
+      margin-right: 15px;
+    }
+
+    .header-title {
+      margin: 0;
+      font-size: 1.5rem;
+      color: white;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+    }
+
+    /* Sticky Navigation */
     nav {
       background: white;
       padding: 15px;
@@ -38,25 +63,33 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     nav a { 
-      margin: 0 10px; 
+      margin: 0 12px; 
       text-decoration: none; 
       font-weight: 600; 
       color: var(--secondary);
+      font-size: 0.9rem;
+      transition: color 0.2s;
     }
 
-    /* This is the white box that holds your content */
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* Main Content Container (The White Box) */
     main { 
       max-width: 900px;
-      margin: 40px auto; /* Centers the box */
+      margin: 40px auto; 
       background: white;
       padding: 40px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
     }
 
+    /* Modern Grids for Services */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -65,29 +98,69 @@
     }
 
     .service-card {
-      padding: 20px;
+      padding: 25px;
       border: 1px solid #e6ebf1;
       border-radius: 8px;
+      background: #fff;
+      transition: transform 0.2s;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
     }
 
+    /* Call to Action Button */
     .cta-button { 
       background: var(--primary); 
       color: white !important; 
-      padding: 12px 24px; 
+      padding: 14px 28px; 
       text-decoration: none; 
-      border-radius: 5px; 
+      border-radius: 50px; 
       display: inline-block; 
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(50,50,93,.11);
+      transition: background 0.2s;
     }
 
-    footer { text-align: center; padding: 40px; color: #adbbcb; }
+    .cta-button:hover {
+      background: #0061d1;
+    }
+
+    footer { 
+      text-align: center; 
+      padding: 60px 20px; 
+      color: #adbbcb; 
+      font-size: 0.85rem;
+    }
+
+    /* Responsive Mobile Adjustments */
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .site-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="header-container">
-      <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
-        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo" class="site-logo">
+      <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center;">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Dr. Roman Baravalle - Data Science Consulting Logo" class="site-logo">
         <h1 class="header-title">{{ site.title }}</h1>
       </a>
     </div>
@@ -108,7 +181,7 @@
   </main>
 
   <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
   </footer>
 
 </body>
