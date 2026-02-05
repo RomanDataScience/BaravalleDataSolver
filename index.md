@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap; margin-bottom: 40px;">
-  <img src="{{ '/assets/Profile.jpg' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background-color: white;">
+  <img src="{{ '/assets/Profile.jpg' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background-color: white;">
   
   <div style="flex: 1; min-width: 300px;">
     <h2 style="margin-top: 0;">Solving Complex Data Challenges</h2>
