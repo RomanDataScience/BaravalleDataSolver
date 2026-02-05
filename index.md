@@ -16,4 +16,4 @@ I break down the barriers of complex data analysis, helping teams confidently ex
 * **Clarity in Complexity:** By translating advanced computational and statistical methods into accessible insights, I help teams unlock the full potential of their data.
 * **Integrity in Collaboration:** I work side by side with clients, valuing transparency, reproducibility, and open communication.
 
-[See My Services](/services/management){: .cta-button}
+[See My Services]({{ '/services/management' | relative_url }}){: .cta-button}
