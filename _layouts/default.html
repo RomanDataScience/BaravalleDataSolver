@@ -54,29 +54,61 @@
       font-weight: 700;
     }
 
-    /* Sticky Navigation */
+/* Sticky Navigation - Larger & More Visible */
     nav {
       background: white;
-      padding: 15px;
+      padding: 25px 15px; /* Increased top/bottom padding */
       text-align: center;
       border-bottom: 1px solid #e6ebf1;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     nav a { 
-      margin: 0 12px; 
+      margin: 0 18px; /* More space between links */
       text-decoration: none; 
-      font-weight: 600; 
+      font-weight: 700; /* Bolder text */
       color: var(--secondary);
-      font-size: 0.9rem;
-      transition: color 0.2s;
+      font-size: 1.2rem; /* Significantly larger text (was 0.9rem) */
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+      position: relative;
     }
 
     nav a:hover {
       color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    /* Modern underline effect on hover */
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: var(--primary);
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Adjust Mobile Nav for larger text */
+    @media (max-width: 600px) {
+      nav {
+        padding: 15px 5px;
+      }
+      nav a {
+        display: block; /* Stack links on small screens */
+        margin: 12px 0;
+        font-size: 1.1rem;
+      }
+      nav a::after { display: none; } /* Hide underline on mobile for cleaner look */
     }
 
     /* Main Content Container (The White Box) */
