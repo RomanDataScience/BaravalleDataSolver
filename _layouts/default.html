@@ -16,13 +16,13 @@
   <header>
     <h1>{{ site.title }}</h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/mission">Mission</a>
-      <a href="/about">About Me</a>
-      <a href="/services/management">Data Management</a>
-      <a href="/services/analysis">Data Analysis</a>
-      <a href="/services/automation">Data Automation</a>
-      <a href="/contact">Contact</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/mission' | relative_url }}">Mission</a>
+      <a href="{{ '/about' | relative_url }}">About Me</a>
+      <a href="{{ '/services/management' | relative_url }}">Data Management</a>
+      <a href="{{ '/services/analysis' | relative_url }}">Data Analysis</a>
+      <a href="{{ '/services/automation' | relative_url }}">Data Automation</a>
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
     </nav>
   </header>
 
