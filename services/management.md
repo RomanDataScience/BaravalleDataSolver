@@ -26,7 +26,8 @@ description: Professional data management services to organize, clean, and secur
     </div>
 
     <div style="margin-top: 60px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Inquire About Management Services</a>
-    </div>
+          <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">Inquire About Management Services</a>
+        </div>
+
   </div>
 </div>
