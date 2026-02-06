@@ -7,14 +7,12 @@ permalink: /
 <div class="hero">
   <div class="container hero-content">
     <div>
-
       <h1 style="font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px;">
         Empowering Teams to <br>
         <span style="color:var(--accent)">own their data journey</span>
       </h1>
-      
       <p style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 30px; opacity: 0.9;">
-              Guiding teams into complex data analysis and empowering people to carry it forward on their own.
+        Guiding teams into complex data analysis and empowering people to carry it forward on their own.
       </p>
       <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="color: white !important;">Schedule a Consultation</a>
     </div>
@@ -24,7 +22,7 @@ permalink: /
   </div>
 </div>
 
-<div class="section bg-offset">
+<div class="section">
   <div class="container">
     <div style="max-width: 900px; margin: 0 auto; text-align: justify;">
       
@@ -53,6 +51,14 @@ permalink: /
     </div>
   </div>
 </div>
+
+<div class="section bg-offset">
+  <div class="container">
+    <div style="max-width: 900px; margin: 0 0 60px 0;">
+      <h2 style="font-size: 2.4rem; color: var(--secondary); text-align: justify; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px;">
+        I dismantle the complexity of data science, empowering teams to master the next generation of analytical methods—built on a foundation of scientific rigor and absolute trust.
+      </h2>
+    </div>
 
     <div class="grid-3">
       <div class="card">
