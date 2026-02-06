@@ -1,18 +1,26 @@
 ---
 layout: default
-title: Home
+title: Dr. Roman Baravalle | Data Solver & Neuroscientist
 permalink: /
 ---
 
 <div class="hero">
   <div class="container hero-content">
     <div>
-      <h1>Complex Data. <br><span style="color:var(--accent)">Clear Strategy.</span></h1>
-      <p>I help organizations turn messy, high-dimensional data into reproducible assets. Scientific rigor, automated workflows, and actionable insights.</p>
+
+      <h1 style="font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px;">
+        Empowering Teams to <br>
+        <span style="color:var(--accent)">own their data journey</span>
+      </h1>
+      guidING TEAMS into complex data analysis... and empowerING people to carry it forward on their own
+
+      <p style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 30px; opacity: 0.9;">
+              Guiding teams into complex data analysis and empowering people to carry it forward on their own.
+      </p>
       <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="color: white !important;">Schedule a Consultation</a>
     </div>
     <div style="text-align: center;">
-       <img src="{{ '/assets/ProfilePicture.png' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 280px; height: 280px; border-radius: 50%; border: 6px solid rgba(255,255,255,0.15); object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+       <img src="{{ '/assets/ProfilePicture.png' | relative_url }}" alt="Dr. Roman Baravalle - Ph.D. Physicist and Data Scientist" style="width: 280px; height: 280px; border-radius: 50%; border: 6px solid rgba(255,255,255,0.15); object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
     </div>
   </div>
 </div>
