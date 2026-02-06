@@ -5,8 +5,8 @@ description: >- # This is your main meta description for Google
   Data Management, Analysis, and Automation.
 url: "https://romandatascience.github.io"
 baseurl: "/BaravalleDataSolver"
-twitter_username: yourtwitter
-github_username:  yourgithub
+# twitter_username: yourtwitter
+github_username:  RomanDataScience
 
 # SEO Settings
 plugins:
