@@ -15,7 +15,7 @@ permalink: /
       <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="color: white !important;">Schedule a Consultation</a>
     </div>
     <div style="text-align: center;">
-       <img src="{{ '/assets/Profile.jpg' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 280px; height: 280px; border-radius: 50%; border: 6px solid rgba(255,255,255,0.15); object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+       <img src="{{ '/assets/ProfilePicture.png' | relative_url }}" alt="Dr. Roman Baravalle" style="width: 280px; height: 280px; border-radius: 50%; border: 6px solid rgba(255,255,255,0.15); object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
     </div>
   </div>
 </div>
