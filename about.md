@@ -6,7 +6,6 @@ description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solv
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">About Me</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Bridging the Gap Between Complex Science and Actionable Data</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">I am Roman Baravalle, a <strong>Computational Neuroscientist</strong> and <strong>Data Solver</strong> dedicated to making complex data approachable. With a <strong>Ph.D. in Physics</strong> and years of research experience, I specialize in turning messy datasets into clear results.</p>
 
