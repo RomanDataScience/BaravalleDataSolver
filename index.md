@@ -27,8 +27,8 @@ permalink: /
 <div class="section bg-offset">
   <div class="container">
     <div style="text-align: center; max-width: 700px; margin: 0 auto 60px auto;">
-      <h2 style="font-size: 2.2rem; color: var(--secondary);">My Expertise</h2>
-      <p style="font-size: 1.1rem; color: var(--text-light);">Bridging the gap between academic complexity and business utility.</p>
+      <h2 style="font-size: 2.2rem; color: var(--secondary);">I break down the barriers of complex data analysis, helping teams confidently explore, apply, and advance the latest methods.
+      </h2>
     </div>
 
     <div class="grid-3">
