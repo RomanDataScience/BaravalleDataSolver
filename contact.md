@@ -6,7 +6,6 @@ permalink: /contact/
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Collaboration</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Get in Touch</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Ready to empower your team? Whether you are dealing with high-dimensional biological signals or looking to streamline your computational workflow, I am here to help you move from data-heavy to insight-rich.</p>
 
