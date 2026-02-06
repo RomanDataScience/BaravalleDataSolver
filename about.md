@@ -1,33 +1,40 @@
 ---
 layout: default
-title: About Roman Baravalle
-description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solver specializing in electrophysiological signals and information theory.
+title: About Dr. Roman Baravalle
+description: Learn about Dr. Roman Baravalle's background in Physics and Neuroscience and his mission to empower data-driven teams.
 ---
 
 <div class="section">
   <div class="container">
-    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Bridging the Gap Between Complex Science and Actionable Data</h2>
-    <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">I am Roman Baravalle, a <strong>Computational Neuroscientist</strong> and <strong>Data Solver</strong> dedicated to making complex data approachable. With a <strong>Ph.D. in Physics</strong> and years of research experience, I specialize in turning messy datasets into clear results.</p>
+    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px; text-align: left;">
+      Meet Roman Baravalle
+    </h2>
 
-    <h3>My Academic Foundation</h3>
-    <p>My journey began with my Ph.D. thesis on <strong>studying correlations in massive databases of electrophysiological signals</strong>. By applying <strong>advanced statistics and Information Theory</strong>, I worked to decode information transmission within the brain. This background taught me that powerful data solutions must be built on mathematical rigor.</p>
+    <div style="text-align: justify; font-size: 1.2rem; line-height: 1.6; margin-bottom: 40px;">
+      <p>
+        Hi, I’m <strong>Roman Baravalle</strong>, a computational neuroscientist passionate about making complex data approachable and actionable. With a <strong>PhD in Physics</strong> and years of experience in U.S. research institutions modeling brain and biological systems, I help research teams turn massive, messy datasets into clear, interpretable results.
+      </p>
+      
+      <p>
+        My work focuses on practical data solutions: cleaning and organizing raw data, developing transparent and well-documented code, and building intuitive analyses that teams can understand, trust, and extend. I believe that good data science isn’t just about powerful tools—it’s about <strong>clarity, reproducibility, and shared understanding</strong>.
+      </p>
 
-    <h3 style="margin-top: 40px;">My "Data Solver" Philosophy</h3>
-    <ul>
-      <li><strong>Clarity:</strong> Translating advanced computational methods into accessible insights.</li>
-      <li><strong>Reproducibility:</strong> Developing transparent, well-documented code.</li>
-      <li><strong>Empowerment:</strong> Building workflows that allow teams to own their data journey.</li>
-    </ul>
+      <p>
+        Through clear data visualizations and hands-on guidance, I help teams build confidence in their computational workflows. My goal is simple: to empower clients to not only generate insights but to <strong>own their data journey</strong>, from raw input to meaningful discovery.
+      </p>
+    </div>
 
-    <h3 style="margin-top: 40px;">Technical Expertise</h3>
-    <ul>
-      <li><strong>Data Management:</strong> Cleaning and organizing raw datasets for scalability.</li>
-      <li><strong>Advanced Modeling:</strong> Applying physics-based logic to biological and business systems.</li>
-      <li><strong>Workflow Automation:</strong> Building robust pipelines in Python and R.</li>
-    </ul>
+    <div style="background: var(--bg-offset); padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; text-align: justify;">
+      <h3 style="margin-top: 0; color: var(--secondary); text-align: left;">Academic & Professional Foundation</h3>
+      <p>
+        My expertise is built on the rigorous study of correlations in massive databases of electrophysiological signals. By applying <strong>Information Theory and Advanced Statistics</strong>, I’ve spent my career decoding how information is transmitted through complex systems. Today, I translate those same scientific principles into reliable workflows for my clients.
+      </p>
+    </div>
 
-    <div style="margin-top: 40px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" style="background: var(--secondary); color: white; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700;">Schedule a Consultation</a>
+    <div style="margin-top: 60px; text-align: center;">
+      <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">
+        Work With Me
+      </a>
     </div>
   </div>
 </div>
