@@ -6,46 +6,29 @@ description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solv
 
 <div class="section">
   <div class="container">
+    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">About Me</div>
+    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Bridging the Gap Between Complex Science and Actionable Data</h2>
+    <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">I am Roman Baravalle, a <strong>Computational Neuroscientist</strong> and <strong>Data Solver</strong> dedicated to making complex data approachable. With a <strong>Ph.D. in Physics</strong> and years of research experience, I specialize in turning messy datasets into clear results.</p>
 
-    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 30px;">Bridging the Gap Between Complex Science and Actionable Data</h2>
+    <h3>My Academic Foundation</h3>
+    <p>My journey began with my Ph.D. thesis on <strong>studying correlations in massive databases of electrophysiological signals</strong>. By applying <strong>advanced statistics and Information Theory</strong>, I worked to decode information transmission within the brain. This background taught me that powerful data solutions must be built on mathematical rigor.</p>
 
-    <p style="font-size: 1.1rem;">I am Roman Baravalle, a <strong>Computational Neuroscientist</strong> and <strong>Data Solver</strong> dedicated to making complex data approachable. With a <strong>Ph.D. in Physics</strong> and years of experience within U.S. research institutions modeling biological systems, I specialize in turning massive, messy datasets into clear, interpretable results.</p>
-
-    <div style="margin: 50px 0; border-left: 4px solid var(--primary); padding-left: 30px;">
-      <h3 style="color: var(--secondary);">My Academic Foundation</h3>
-      <p>My journey in data began with my Ph.D. thesis, where I focused on <strong>studying correlations in massive databases of electrophysiological signals</strong>. By applying <strong>advanced statistics and Information Theory</strong>, I worked to decode the intricacies of information transmission within the brain.</p>
-      <p>This background in high-stakes, high-complexity academic research taught me that the most powerful data solutions are those built on a foundation of mathematical rigor and absolute clarity.</p>
-    </div>
-
-    <h3 style="margin-top: 50px;">My "Data Solver" Philosophy</h3>
-    <p>I believe that good data science isn’t just about the complexity of the tools—it’s about the quality of the understanding. My work is built on three pillars:</p>
-    
-    <div class="grid-3" style="margin-top: 30px;">
-      <div class="card">
-        <strong>Clarity</strong>
-        <p>Translating advanced computational methods into accessible insights.</p>
-      </div>
-      <div class="card">
-        <strong>Reproducibility</strong>
-        <p>Developing transparent, well-documented code that your team can trust.</p>
-      </div>
-      <div class="card">
-        <strong>Empowerment</strong>
-        <p>Building intuitive workflows that allow teams to own their data journey from raw input to discovery.</p>
-      </div>
-    </div>
-
-    <h3 style="margin-top: 60px;">Technical Expertise</h3>
-    <p>Beyond the brain, I help research teams and organizations with:</p>
-    <ul style="line-height: 2;">
-      <li><strong>Data Management:</strong> Cleaning and organizing raw datasets for long-term scalability.</li>
-      <li><strong>Advanced Modeling:</strong> Applying physics-based logic and statistical theory to biological and business systems.</li>
-      <li><strong>Workflow Automation:</strong> Building robust, extendable pipelines in Python and R.</li>
+    <h3 style="margin-top: 40px;">My "Data Solver" Philosophy</h3>
+    <ul>
+      <li><strong>Clarity:</strong> Translating advanced computational methods into accessible insights.</li>
+      <li><strong>Reproducibility:</strong> Developing transparent, well-documented code.</li>
+      <li><strong>Empowerment:</strong> Building workflows that allow teams to own their data journey.</li>
     </ul>
 
-    <div style="margin-top: 60px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Schedule a Consultation</a>
-    </div>
+    <h3 style="margin-top: 40px;">Technical Expertise</h3>
+    <ul>
+      <li><strong>Data Management:</strong> Cleaning and organizing raw datasets for scalability.</li>
+      <li><strong>Advanced Modeling:</strong> Applying physics-based logic to biological and business systems.</li>
+      <li><strong>Workflow Automation:</strong> Building robust pipelines in Python and R.</li>
+    </ul>
 
+    <div style="margin-top: 40px; text-align: center;">
+      <a href="{{ '/contact' | relative_url }}" style="background: var(--secondary); color: white; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700;">Schedule a Consultation</a>
+    </div>
   </div>
 </div>
