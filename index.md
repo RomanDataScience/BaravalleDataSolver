@@ -12,8 +12,7 @@ permalink: /
         Empowering Teams to <br>
         <span style="color:var(--accent)">own their data journey</span>
       </h1>
-      guidING TEAMS into complex data analysis... and empowerING people to carry it forward on their own
-
+      
       <p style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 30px; opacity: 0.9;">
               Guiding teams into complex data analysis and empowering people to carry it forward on their own.
       </p>
