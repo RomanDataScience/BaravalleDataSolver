@@ -52,14 +52,6 @@ permalink: /
   </div>
 </div>
 
-<div class="section bg-offset">
-  <div class="container">
-    <div style="max-width: 900px; margin: 0 0 60px 0;">
-      <h2 style="font-size: 2.4rem; color: var(--secondary); text-align: justify; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px;">
-        I dismantle the complexity of data science, empowering teams to master the next generation of analytical methods—built on a foundation of scientific rigor and absolute trust.
-      </h2>
-    </div>
-
     <div class="grid-3">
       <div class="card">
         <span class="card-icon">📊</span>
