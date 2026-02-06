@@ -7,7 +7,6 @@ description: Advanced statistical analysis and predictive modeling services by D
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Service Area</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Data Analysis Services</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Unlock the stories hidden in your numbers with physics-based precision and advanced statistical theory.</p>
 
