@@ -27,7 +27,7 @@ description: Empowering teams to overcome the struggle of complex big data and t
         The goal is to provide the critical first step: guiding your team through advanced analytical tools so you can not only get results... but truly <strong>own your data journey</strong>.
       </p>
       <ul style="font-size: 1.1rem; line-height: 1.8; margin-top: 20px;">
-        <li><strong>Guiding:</strong> Navigating complex computational methods with physics-based rigor.</li>
+        <li><strong>Guiding:</strong> Navigating complex computational methods with methodological rigor.</li>
         <li><strong>Building:</strong> Developing the skills and confidence within your team to continue independently.</li>
         <li><strong>Empowering:</strong> Cultivating lasting expertise for long-term self-sufficiency.</li>
       </ul>
