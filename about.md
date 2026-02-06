@@ -31,6 +31,20 @@ description: Learn about Dr. Roman Baravalle's background in Physics and Neurosc
       </p>
     </div>
 
+    <h3 style="margin-top: 40px; color: var(--secondary);">My "Data Solver" Philosophy</h3>
+    <ul style="text-align: justify; line-height: 1.8;">
+      <li><strong>Clarity:</strong> Translating advanced computational methods into accessible insights.</li>
+      <li><strong>Reproducibility:</strong> Developing transparent, well-documented code.</li>
+      <li><strong>Empowerment:</strong> Building workflows that allow teams to own their data journey.</li>
+    </ul>
+
+    <h3 style="margin-top: 40px; color: var(--secondary);">Technical Expertise</h3>
+    <ul style="text-align: justify; line-height: 1.8;">
+      <li><strong>Data Management:</strong> Cleaning and organizing raw datasets for scalability.</li>
+      <li><strong>Advanced Modeling:</strong> Applying physics-based logic to biological and business systems.</li>
+      <li><strong>Workflow Automation:</strong> Building robust pipelines in Python and R.</li>
+    </ul>
+
     <div style="margin-top: 60px; text-align: center;">
       <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">
         Work With Me
