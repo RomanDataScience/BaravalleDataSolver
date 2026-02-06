@@ -31,7 +31,7 @@ permalink: /
       </p>
 
       <h2 style="font-size: 2.2rem; color: var(--secondary); text-align: left; margin-bottom: 25px;">
-        I translate computational complexity into commercial clarity.
+        I translate computational complexity into translational clarity.
       </h2>
       
       <p style="font-size: 1.2rem; line-height: 1.7; margin-bottom: 30px;">
@@ -43,10 +43,6 @@ permalink: /
           "I don't just hand over a report; I hand over the keys. Your team gains the skills and confidence to continue the discovery long after our partnership ends."
         </p>
       </div>
-
-      <p style="font-size: 1.1rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px;">
-        Specialized focus: Large-Scale Analytics & Advanced Time Series Analysis
-      </p>
 
     </div>
   </div>
