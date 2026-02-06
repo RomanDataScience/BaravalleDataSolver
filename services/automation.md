@@ -7,7 +7,6 @@ description: Automate repetitive data tasks with Python and R scripts to save ti
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Service Area</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Data Automation Services</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Eliminate manual bottlenecks. I develop automated pipelines that ensure your data flows accurately and efficiently.</p>
 
