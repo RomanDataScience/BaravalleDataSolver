@@ -18,6 +18,8 @@ description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solv
     </div>
 
     <h3 style="margin-top: 50px;">My "Data Solver" Philosophy</h3>
+    <p>I believe that good data science isn’t just about the complexity of the tools—it’s about the quality of the understanding. My work is built on three pillars:</p>
+    
     <div class="grid-3" style="margin-top: 30px;">
       <div class="card">
         <strong>Clarity</strong>
@@ -29,11 +31,12 @@ description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solv
       </div>
       <div class="card">
         <strong>Empowerment</strong>
-        <p>Building intuitive workflows that allow teams to own their data journey.</p>
+        <p>Building intuitive workflows that allow teams to own their data journey from raw input to discovery.</p>
       </div>
     </div>
 
     <h3 style="margin-top: 60px;">Technical Expertise</h3>
+    <p>Beyond the brain, I help research teams and organizations with:</p>
     <ul style="line-height: 2;">
       <li><strong>Data Management:</strong> Cleaning and organizing raw datasets for long-term scalability.</li>
       <li><strong>Advanced Modeling:</strong> Applying physics-based logic and statistical theory to biological and business systems.</li>
@@ -41,7 +44,7 @@ description: Dr. Roman Baravalle is a Computational Neuroscientist and Data Solv
     </ul>
 
     <div style="margin-top: 60px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Let's Collaborate</a>
+      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Schedule a Consultation</a>
     </div>
 
   </div>
