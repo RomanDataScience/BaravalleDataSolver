@@ -7,7 +7,6 @@ description: Professional data management services to organize, clean, and secur
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Service Area</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Data Management Services</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Before analysis can begin, your data must be reliable. I help teams build robust foundations for data integrity.</p>
 
