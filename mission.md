@@ -7,7 +7,6 @@ description: My mission is to break down barriers to complex data analysis and e
 
 <div class="section">
   <div class="container">
-    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Our Vision</div>
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">My Mission</h2>
     <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">To democratize data science by stripping away the jargon and complexity. I believe that <strong>complex data analysis should not be a black box</strong>.</p>
 
