@@ -24,13 +24,6 @@ description: Learn about Dr. Roman Baravalle's background in Physics and Neurosc
       </p>
     </div>
 
-    <div style="background: var(--bg-offset); padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; text-align: justify;">
-      <h3 style="margin-top: 0; color: var(--secondary); text-align: left;">Academic & Professional Foundation</h3>
-      <p>
-        My expertise is built on the rigorous study of correlations in massive databases of electrophysiological signals. By applying <strong>Information Theory and Advanced Statistics</strong>, I’ve spent my career decoding how information is transmitted through complex systems. Today, I translate those same scientific principles into reliable workflows for my clients.
-      </p>
-    </div>
-
     <h3 style="margin-top: 40px; color: var(--secondary);">My "Data Solver" Philosophy</h3>
     <ul style="text-align: justify; line-height: 1.8;">
       <li><strong>Clarity:</strong> Translating advanced computational methods into accessible insights.</li>
