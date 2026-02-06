@@ -9,19 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    /* --- RESTORED CORE VARIABLES --- */
     :root {
-      --primary: #0070f3;       /* Vibrant Blue */
-      --secondary: #0a2540;     /* Trust Navy */
-      --accent: #00d4ff;        /* Cyan Highlight */
-      --bg-light: #ffffff;      /* Pure White */
-      --bg-offset: #f9fafb;     /* Very Light Grey */
-      --text-main: #1f2937;     /* Dark Grey */
-      --text-light: #6b7280;    /* Soft Grey */
-      --max-width: 1000px;      /* Your preferred margin width */
+      --primary: #0070f3;
+      --secondary: #0a2540;
+      --accent: #00d4ff;
+      --bg-light: #ffffff;
+      --bg-offset: #f9fafb;
+      --text-main: #1f2937;
+      --text-light: #6b7280;
+      --max-width: 1000px;
     }
 
-    /* --- BASE STYLES --- */
     body { 
       margin: 0; padding: 0; 
       font-family: 'Inter', sans-serif; 
@@ -35,10 +33,9 @@
       padding: 0 60px;
     }
     
-    .section { padding: 100px 0; }
+    .section { padding: 80px 0; }
     .bg-offset { background-color: var(--bg-offset); }
 
-    /* --- HEADER & NAVIGATION --- */
     header {
       background: white;
       border-bottom: 1px solid #e5e7eb;
@@ -51,51 +48,53 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 80px;
+      height: 90px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      color: var(--secondary);
+      gap: 15px;
       text-decoration: none;
     }
     
-    .brand img { height: 45px; width: auto; }
+    .brand img { height: 50px; width: auto; }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--secondary);
+      line-height: 1.1;
+    }
+
+    .brand-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--primary);
+    }
 
     .nav-links {
       display: flex;
       align-items: center;
       list-style: none;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
 
-    .nav-item {
-      position: relative;
-      margin-left: 25px;
-    }
+    .nav-item { position: relative; margin-left: 25px; }
+    .nav-item a { font-weight: 600; color: var(--text-main); font-size: 0.95rem; text-decoration: none; display: flex; align-items: center; gap: 5px; }
 
-    .nav-item a {
-      font-weight: 600;
-      color: var(--text-main);
-      font-size: 0.95rem;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    /* --- DROPDOWN LOGIC --- */
     .dropdown-menu {
       position: absolute;
       top: 100%;
       left: 50%;
       transform: translateX(-50%) translateY(10px);
       background: white;
-      min-width: 220px;
+      min-width: 200px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       border-radius: 8px;
       border: 1px solid #e5e7eb;
@@ -105,58 +104,19 @@
       transition: all 0.2s ease;
     }
 
-    .nav-item:hover .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(-50%) translateY(0);
-    }
+    .nav-item:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .dropdown-menu a { display: block; padding: 10px 20px; font-size: 0.9rem; color: var(--text-main); }
+    .dropdown-menu a:hover { background-color: var(--bg-offset); color: var(--primary); }
 
-    .dropdown-menu a {
-      display: block;
-      padding: 10px 20px;
-      color: var(--text-main);
-    }
+    .btn-nav { background: var(--secondary); color: white !important; padding: 10px 20px; border-radius: 6px; }
 
-    .dropdown-menu a:hover {
-      background-color: var(--bg-offset);
-      color: var(--primary);
-    }
-
-    .nav-item .arrow {
-      border: solid var(--text-main);
-      border-width: 0 2px 2px 0;
-      display: inline-block;
-      padding: 2px;
-      transform: rotate(45deg);
-    }
-
-    .btn-nav {
-      background: var(--secondary);
-      color: white !important;
-      padding: 10px 20px;
-      border-radius: 6px;
-    }
-
-    /* --- HERO & GRIDS (Used in Index/Services) --- */
-    .hero { background: var(--secondary); color: white; padding: 100px 0; }
-    .hero-content { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
-    .hero h1 { font-size: 3.2rem; margin: 0; }
-    .hero-btn { background: var(--accent); color: var(--secondary) !important; padding: 15px 32px; border-radius: 50px; font-weight: 700; display: inline-block; }
-    
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-    .card { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 35px; }
-    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
-
-    /* --- FOOTER --- */
-    footer { background: var(--secondary); color: #9ca3af; padding: 60px 0; }
-    footer h3, footer h4 { color: white; }
+    footer { background: var(--secondary); color: #9ca3af; padding: 60px 0; margin-top: 60px; }
+    footer h3 { color: white; margin-bottom: 20px; }
     footer a { color: #9ca3af; text-decoration: none; }
-    footer a:hover { color: white; }
 
     @media (max-width: 768px) {
-      .container { padding: 0 20px; }
-      .nav-links { display: none; } /* Mobile Menu would need JS, keeping it simple for now */
-      .hero-content { grid-template-columns: 1fr; text-align: center; }
+      .container { padding: 0 25px; }
+      .nav-links { display: none; }
     }
   </style>
 </head>
@@ -166,7 +126,10 @@
   <div class="container nav-wrapper">
     <a href="{{ '/' | relative_url }}" class="brand">
       <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo">
-      <span style="color:var(--secondary)">Ph.D in Physics & Neuroscientist</span>
+      <div class="brand-text">
+        <span class="brand-name">Roman Baravalle</span>
+        <span class="brand-title">Ph.D. in Physics & Neuroscientist</span>
+      </div>
     </a>
     <nav>
       <ul class="nav-links">
@@ -174,7 +137,7 @@
         <li class="nav-item"><a href="{{ '/mission' | relative_url }}">Mission</a></li>
         <li class="nav-item"><a href="{{ '/about' | relative_url }}">About</a></li>
         <li class="nav-item">
-          <a href="#">Services <i class="arrow"></i></a>
+          <a href="#">Services <small>▼</small></a>
           <div class="dropdown-menu">
             <a href="{{ '/services/management' | relative_url }}">Data Management</a>
             <a href="{{ '/services/analysis' | relative_url }}">Data Analysis</a>
@@ -191,25 +154,6 @@
 
 <footer>
   <div class="container">
-    <div class="grid-3">
-      <div>
-        <h3>Roman Baravalle, Ph.D.</h3>
-        <p>Scientific rigor applied to business data.</p>
-        <p>Physics-based modeling & Neuroscience-inspired analytics.</p>
-      </div>
-      <div>
-        <h4>Services</h4>
-        <p><a href="{{ '/services/management' | relative_url }}">Data Management</a></p>
-        <p><a href="{{ '/services/analysis' | relative_url }}">Data Analysis</a></p>
-        <p><a href="{{ '/services/automation' | relative_url }}">Automation Pipelines</a></p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>baravalledatascientist@gmail.com</p>
-        <p>Based in the US</p>
-      </div>
-    </div>
-    <hr style="border-color: #374151; margin: 40px 0;">
     <p style="text-align:center">&copy; {{ site.time | date: '%Y' }} Dr. Roman Baravalle. All rights reserved.</p>
   </div>
 </footer>
