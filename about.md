@@ -7,7 +7,7 @@ description: Learn about Dr. Roman Baravalle's background in Physics and Neurosc
 <div class="section">
   <div class="container">
     <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px; text-align: left;">
-      Meet Roman Baravalle
+      Meet Roman Baravalle, Ph.D.
     </h2>
 
     <div style="text-align: justify; font-size: 1.2rem; line-height: 1.6; margin-bottom: 40px;">
