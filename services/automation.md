@@ -25,8 +25,9 @@ description: Automate repetitive data tasks with Python and R scripts to save ti
       </div>
     </div>
 
-    <div style="margin-top: 60px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Inquire About Automation Services</a>
-    </div>
+      <div style="margin-top: 60px; text-align: center;">
+          <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">Inquire About Automation Services</a>
+        </div>
+    
   </div>
 </div>
