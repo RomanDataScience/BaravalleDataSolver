@@ -5,10 +5,29 @@ permalink: /services/management/
 description: Professional data management services to organize, clean, and secure your business data.
 ---
 
-## Data Management Services
+<div class="section">
+  <div class="container">
+    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Service Area</div>
+    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Data Management Services</h2>
+    <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Before analysis can begin, your data must be reliable. I help teams build robust foundations for data integrity.</p>
 
-Before analysis can begin, your data must be reliable. I help teams build robust foundations.
+    <div class="grid-3" style="margin-top: 40px;">
+      <div class="card">
+        <h3>Data Cleaning & Preparation</h3>
+        <p>Transforming messy raw data into analysis-ready formats. I handle outlier detection, missing value imputation, and normalization.</p>
+      </div>
+      <div class="card">
+        <h3>Database Design</h3>
+        <p>Structuring SQL/NoSQL environments for scalability. Ensuring your data architecture supports high-performance querying.</p>
+      </div>
+      <div class="card">
+        <h3>Governance</h3>
+        <p>Ensuring your data handling meets privacy and integrity standards. I help implement workflows that maintain data quality over time.</p>
+      </div>
+    </div>
 
-* **Data Cleaning & Preparation:** Transforming messy raw data into analysis-ready formats.
-* **Database Design:** Structuring SQL/NoSQL environments for scalability.
-* **Governance:** Ensuring your data handling meets privacy and integrity standards.
+    <div style="margin-top: 60px; text-align: center;">
+      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Inquire About Management Services</a>
+    </div>
+  </div>
+</div>
