@@ -26,11 +26,33 @@ permalink: /
 
 <div class="section bg-offset">
   <div class="container">
-    <div style="max-width: 900px; margin: 0 0 60px 0;">
-      <h2 style="font-size: 2.4rem; color: var(--secondary); text-align: justify; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px;">
-        I break down the barriers of complex data analysis, helping teams confidently explore, apply, and advance the next generation of methods—built on a foundation of rigor and absolute trust.
+    <div style="max-width: 900px; margin: 0 auto; text-align: justify;">
+      
+      <p style="font-size: 1.4rem; color: var(--text-light); line-height: 1.6; margin-bottom: 30px;">
+        Your data holds the answers, but they are buried under the noise. Massive databases stay silent, and complex time series mask the very trends you need to see. Most results don't provide a path forward—they just raise more questions.
+      </p>
+
+      <h2 style="font-size: 2.2rem; color: var(--secondary); text-align: left; margin-bottom: 25px;">
+        I translate computational complexity into commercial clarity.
       </h2>
+      
+      <p style="font-size: 1.2rem; line-height: 1.7; margin-bottom: 30px;">
+        Applying the same rigor used to decode the human brain, I uncover the hidden architecture of your data. Through <strong>targeted analytics</strong> and <strong>custom-built tools</strong>, I transform raw signals into actionable intelligence—connecting the dots today and forecasting the patterns of tomorrow.
+      </p>
+
+      <div style="border-left: 4px solid var(--primary); padding-left: 25px; margin: 40px 0;">
+        <p style="font-size: 1.2rem; font-style: italic; color: var(--secondary); font-weight: 500;">
+          "I don't just hand over a report; I hand over the keys. Your team gains the skills and confidence to continue the discovery long after our partnership ends."
+        </p>
+      </div>
+
+      <p style="font-size: 1.1rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px;">
+        Specialized focus: Large-Scale Analytics & Advanced Time Series Analysis
+      </p>
+
     </div>
+  </div>
+</div>
 
     <div class="grid-3">
       <div class="card">
