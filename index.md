@@ -27,7 +27,7 @@ permalink: /
 <div class="section bg-offset">
   <div class="container">
     <div style="max-width: 900px; margin: 0 0 60px 0;">
-      <h2 style="font-size: 2.2rem; color: var(--secondary); text-align: justify; line-height: 1.3;">
+      <h2 style="font-size: 2.4rem; color: var(--secondary); text-align: justify; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px;">
         I break down the barriers of complex data analysis, helping teams confidently explore, apply, and advance the next generation of methods—built on a foundation of rigor and absolute trust.
       </h2>
     </div>
