@@ -4,221 +4,211 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   
   <style>
-    /* CSS Variables for a professional, vibrant palette */
+    /* --- VARIABLES --- */
     :root {
-      --primary: #0070f3;      /* Vibrant Blue */
-      --secondary: #0a2540;    /* Trust Navy */
-      --bg-light: #f6f9fc;     /* Soft Grey Background */
-      --text-main: #425466;    /* Readable Slate */
+      --primary: #0070f3;       /* Bright Blue */
+      --secondary: #0a2540;     /* Deep Navy */
+      --accent: #00d4ff;        /* Cyan Highlight */
+      --bg-light: #ffffff;      /* Pure White */
+      --bg-offset: #f9fafb;     /* Very Light Grey for sections */
+      --text-main: #1f2937;     /* Dark Grey */
+      --text-light: #6b7280;    /* Light Grey */
+      --max-width: 1200px;      /* Wider container for Lab look */
     }
 
+    /* --- RESET & BASICS --- */
     body { 
       margin: 0; 
       padding: 0; 
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+      font-family: 'Inter', sans-serif; 
       line-height: 1.6;
       color: var(--text-main);
       background-color: var(--bg-light);
     }
 
-    /* Header with Logo and Title */
-    header {
-      background: var(--secondary);
-      padding: 20px;
-      color: white;
-      border-bottom: 4px solid var(--primary);
-    }
+    h1, h2, h3 { margin-top: 0; line-height: 1.2; }
+    a { text-decoration: none; color: inherit; transition: color 0.2s; }
 
-    .header-container {
-      max-width: 900px;
+    /* --- LAYOUT UTILITIES --- */
+    .container {
+      max-width: var(--max-width);
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .site-logo {
-      height: 50px;
-      width: auto;
-      display: block;
-      margin-right: 15px;
-    }
-
-    .header-title {
-      margin: 0;
-      font-size: 1.5rem;
-      color: white;
-      letter-spacing: -0.5px;
-      font-weight: 700;
-    }
-
-/* Sticky Navigation - Larger & More Visible */
-    nav {
-      background: white;
-      padding: 25px 15px; /* Increased top/bottom padding */
-      text-align: center;
-      border-bottom: 1px solid #e6ebf1;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    nav a { 
-      margin: 0 18px; /* More space between links */
-      text-decoration: none; 
-      font-weight: 700; /* Bolder text */
-      color: var(--secondary);
-      font-size: 1.2rem; /* Significantly larger text (was 0.9rem) */
-      transition: all 0.2s ease-in-out;
-      display: inline-block;
-      position: relative;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-      transform: translateY(-1px);
-    }
-
-    /* Modern underline effect on hover */
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: var(--primary);
-      transition: width 0.3s;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    /* Adjust Mobile Nav for larger text */
-    @media (max-width: 600px) {
-      nav {
-        padding: 15px 5px;
-      }
-      nav a {
-        display: block; /* Stack links on small screens */
-        margin: 12px 0;
-        font-size: 1.1rem;
-      }
-      nav a::after { display: none; } /* Hide underline on mobile for cleaner look */
-    }
-
-    /* Main Content Container (The White Box) */
-    main { 
-      max-width: 900px;
-      margin: 40px auto; 
-      background: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-    }
-
-    /* Modern Grids for Services */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .service-card {
-      padding: 25px;
-      border: 1px solid #e6ebf1;
-      border-radius: 8px;
-      background: #fff;
-      transition: transform 0.2s;
+      padding: 0 20px;
     }
     
-    .service-card:hover {
-      transform: translateY(-3px);
+    .section { padding: 80px 0; }
+    .bg-offset { background-color: var(--bg-offset); }
+
+    /* --- HEADER & NAV --- */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+    
+    .brand img { height: 40px; width: auto; }
+
+    nav a {
+      margin-left: 25px;
+      font-weight: 500;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--primary); }
+    nav .btn-nav {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+    nav .btn-nav:hover { background: var(--primary); color: white; }
+
+    /* --- HERO SECTION --- */
+    .hero {
+      background: var(--secondary);
+      color: white;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Text left, Image right */
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 20px; }
+    .hero p { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 30px; max-width: 500px; }
+    
+    .hero-btn {
+      background: var(--accent);
+      color: var(--secondary);
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .hero-btn:hover { background: white; transform: translateY(-2px); }
+
+    /* --- CARDS & GRIDS --- */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+      top: 0;
+    }
+    .card:hover {
+      top: -5px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
       border-color: var(--primary);
     }
+    .card-icon { font-size: 2rem; margin-bottom: 15px; display: block; }
+    .card h3 { color: var(--secondary); font-size: 1.3rem; margin-bottom: 10px; }
+    .card p { color: var(--text-light); font-size: 0.95rem; }
 
-    /* Call to Action Button */
-    .cta-button { 
-      background: var(--primary); 
-      color: white !important; 
-      padding: 14px 28px; 
-      text-decoration: none; 
-      border-radius: 50px; 
-      display: inline-block; 
-      font-weight: bold;
-      box-shadow: 0 4px 6px rgba(50,50,93,.11);
-      transition: background 0.2s;
+    /* --- STATS SECTION --- */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
     }
+    .stat-item h2 { font-size: 3rem; color: var(--primary); margin-bottom: 5px; }
+    .stat-item p { font-weight: 600; color: var(--text-light); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
 
-    .cta-button:hover {
-      background: #0061d1;
+    /* --- FOOTER --- */
+    footer {
+      background: var(--secondary);
+      color: #9ca3af;
+      padding: 60px 0;
+      font-size: 0.9rem;
     }
-
-    footer { 
-      text-align: center; 
-      padding: 60px 20px; 
-      color: #adbbcb; 
-      font-size: 0.85rem;
-    }
-
-    /* Responsive Mobile Adjustments */
-    @media (max-width: 600px) {
-      .header-container {
-        flex-direction: column;
-        text-align: center;
-      }
-      .site-logo {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-      main {
-        margin: 20px;
-        padding: 20px;
-      }
-      nav a {
-        display: inline-block;
-        margin: 5px 10px;
-      }
+    
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .hero-content { grid-template-columns: 1fr; text-align: center; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { margin: 0 auto 30px auto; }
+      .nav-links { display: none; } /* Simplified mobile handling */
+      .stats-grid { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="header-container">
-      <a href="{{ '/' | relative_url }}" style="text-decoration: none; display: flex; align-items: center;">
-        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Roman Baravalle, PhD - Data Solver Consulting Logo" class="site-logo">
-        <div style="display: flex; flex-direction: column; margin-left: 15px;">
-          <h1 class="header-title" style="line-height: 1.1; margin: 0;">Roman Baravalle, Ph.D. in Physics</h1>
-          <p style="margin: 2px 0 0 0; color: #00d4ff; font-weight: 600; font-size: 1.1rem; letter-spacing: 0.5px;">
-            Data Solver & Neuroscientist
-          </p>
-        </div>
+    <div class="container nav-wrapper">
+      <a href="{{ '/' | relative_url }}" class="brand">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo">
+        <span>Baravalle<span style="color:var(--primary)">.Lab</span></span>
       </a>
+      <nav class="nav-links">
+        <a href="{{ '/mission' | relative_url }}">Mission</a>
+        <a href="{{ '/services/management' | relative_url }}">Services</a>
+        <a href="{{ '/about' | relative_url }}">Team & About</a>
+        <a href="{{ '/contact' | relative_url }}" class="btn-nav">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/mission' | relative_url }}">Mission</a>
-    <a href="{{ '/about' | relative_url }}">About</a>
-    <a href="{{ '/services/management' | relative_url }}">Management</a>
-    <a href="{{ '/services/analysis' | relative_url }}">Analysis</a>
-    <a href="{{ '/services/automation' | relative_url }}">Automation</a>
-    <a href="{{ '/contact' | relative_url }}">Contact</a>
-  </nav>
-
-  <main>
-    {{ content }}
-  </main>
+  {{ content }}
 
   <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <h3 style="color:white; margin-bottom:20px;">Roman Baravalle, Ph.D.</h3>
+          <p>Computational Neuroscientist & Data Solver.</p>
+        </div>
+        <div>
+          <h4 style="color:white;">Quick Links</h4>
+          <p><a href="{{ '/services/analysis' | relative_url }}">Data Analysis</a></p>
+          <p><a href="{{ '/services/automation' | relative_url }}">Automation</a></p>
+        </div>
+        <div>
+          <h4 style="color:white;">Contact</h4>
+          <p>baravalledatascientist@gmail.com</p>
+          <p>New York / Remote</p>
+        </div>
+      </div>
+      <hr style="border-color: #1f2937; margin: 40px 0;">
+      <p style="text-align:center">&copy; {{ site.time | date: '%Y' }} Baravalle Data Solver. Built with Jekyll.</p>
+    </div>
   </footer>
 
 </body>
