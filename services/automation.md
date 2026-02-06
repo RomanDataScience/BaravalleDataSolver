@@ -5,10 +5,29 @@ permalink: /services/automation/
 description: Automate repetitive data tasks with Python and R scripts to save time and reduce errors.
 ---
 
-## Data Automation Services
+<div class="section">
+  <div class="container">
+    <div style="text-transform: uppercase; color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px;">Service Area</div>
+    <h2 style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;">Data Automation Services</h2>
+    <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px;">Eliminate manual bottlenecks. I develop automated pipelines that ensure your data flows accurately and efficiently.</p>
 
-Stop doing the same manual tasks every week.
+    <div class="grid-3" style="margin-top: 40px;">
+      <div class="card">
+        <h3>ETL Pipelines</h3>
+        <p>Automated extraction, transformation, and loading of data. Ensure your systems are always up-to-date without manual intervention.</p>
+      </div>
+      <div class="card">
+        <h3>Report Generation</h3>
+        <p>Auto-updating reports delivered directly to your inbox. High-quality documentation produced instantly from fresh data.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Scripting</h3>
+        <p>Robust Python and R orchestration to replace manual spreadsheet work. Focus on reproducibility and error reduction.</p>
+      </div>
+    </div>
 
-* **ETL Pipelines:** Automated extraction, transformation, and loading of data.
-* **Report Generation:** Auto-updating reports delivered to your inbox.
-* **Scripting:** Custom Python/R scripts to replace manual spreadsheet work.
+    <div style="margin-top: 60px; text-align: center;">
+      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Inquire About Automation Services</a>
+    </div>
+  </div>
+</div>
