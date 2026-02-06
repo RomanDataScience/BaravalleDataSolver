@@ -48,6 +48,8 @@ permalink: /
   </div>
 </div>
 
+<div class="section bg-offset">
+  <div class="container">
     <div class="grid-3">
       <div class="card">
         <span class="card-icon">📊</span>
