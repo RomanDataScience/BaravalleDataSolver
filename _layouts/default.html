@@ -7,202 +7,117 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  
+
   <style>
-    /* --- VARIABLES --- */
-    :root {
-      --primary: #0070f3;       /* Vibrant Blue */
-      --secondary: #0a2540;     /* Trust Navy */
-      --accent: #00d4ff;        /* Cyan Highlight */
-      --bg-light: #ffffff;      /* Pure White */
-      --bg-offset: #f9fafb;     /* Very Light Grey */
-      --text-main: #1f2937;     /* Dark Grey */
-      --text-light: #6b7280;    /* Soft Grey */
-      --max-width: 1200px;      /* Professional Wide Layout */
-    }
-
-    /* --- RESET & BASICS --- */
-    body { 
-      margin: 0; 
-      padding: 0; 
-      font-family: 'Inter', sans-serif; 
-      line-height: 1.6;
-      color: var(--text-main);
-      background-color: var(--bg-light);
-    }
-
-    h1, h2, h3 { margin-top: 0; line-height: 1.2; }
-    a { text-decoration: none; color: inherit; transition: color 0.2s; }
-
-    /* --- LAYOUT UTILITIES (UPDATED) --- */
-    .container {
-      max-width: 1000px; /* Reduced from 1200px to bring content closer to center */
-      margin: 0 auto;    /* Centers the container */
-      padding: 0 60px;   /* Increased side padding (was 20px) */
-    }
-    
-    /* Adds more vertical space between white/gray sections */
-    .section { 
-      padding: 100px 0; /* Increased from 80px */
-    }
-
-    /* Mobile Adjustment: Keep margins smaller on phones so text fits */
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 30px; /* Comfortable padding on mobile */
-      }
-      .section {
-        padding: 60px 0;
-      }
-    }
-    .bg-offset { background-color: var(--bg-offset); }
-
-    /* --- HEADER & NAV --- */
-    header {
-      background: rgba(255, 255, 255, 0.98);
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-    }
-
-    .nav-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 80px;
-    }
-
-    .brand {
+    /* --- DROPDOWN NAVIGATION CSS --- */
+    .nav-links {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      font-size: 1.3rem;
-      color: var(--secondary);
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
-    
-    .brand img { height: 45px; width: auto; }
-
-    .nav-links { display: flex; align-items: center; }
-    nav a {
-      margin-left: 30px;
+  
+    .nav-item {
+      position: relative;
+      margin-left: 25px;
+    }
+  
+    .nav-item a {
       font-weight: 600;
       color: var(--text-main);
       font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
-    nav a:hover { color: var(--primary); }
-    
-    nav .btn-nav {
-      background: var(--secondary);
-      color: white;
+  
+    /* Dropdown Menu Container */
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background: white;
+      min-width: 220px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      padding: 10px 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+      z-index: 1000;
+    }
+  
+    /* Show Dropdown on Hover */
+    .nav-item:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+  
+    .dropdown-menu a {
+      display: block;
       padding: 10px 20px;
-      border-radius: 6px;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-main);
       transition: background 0.2s;
     }
-    nav .btn-nav:hover { background: var(--primary); color: white; }
-
-    /* --- HERO SECTION --- */
-    .hero {
-      background: var(--secondary);
-      color: white;
-      padding: 100px 0;
-      position: relative;
+  
+    .dropdown-menu a:hover {
+      background-color: var(--bg-offset);
+      color: var(--primary);
     }
-    
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr; /* Text wider than image */
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero h1 { font-size: 3.2rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 20px; }
-    .hero p { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 35px; max-width: 550px; }
-    
-    .hero-btn {
-      background: var(--accent);
-      color: var(--secondary);
-      padding: 15px 32px;
-      border-radius: 50px;
-      font-weight: 700;
+  
+    /* Arrow icon for the Services link */
+    .nav-item .arrow {
+      border: solid var(--text-main);
+      border-width: 0 2px 2px 0;
       display: inline-block;
-      box-shadow: 0 4px 15px rgba(0,212,255, 0.3);
+      padding: 2px;
+      transform: rotate(45deg);
+      margin-bottom: 2px;
+      transition: transform 0.2s;
     }
-    .hero-btn:hover { background: white; transform: translateY(-2px); }
-
-    /* --- CARDS & GRIDS --- */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 35px;
-      transition: all 0.3s ease;
-      position: relative;
-      top: 0;
-    }
-    .card:hover {
-      top: -5px;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  
+    .nav-item:hover .arrow {
+      transform: rotate(-135deg);
       border-color: var(--primary);
     }
-    .card-icon { font-size: 2.2rem; margin-bottom: 20px; display: block; }
-    .card h3 { color: var(--secondary); font-size: 1.4rem; margin-bottom: 12px; }
-    .card p { color: var(--text-light); font-size: 1rem; }
-
-    /* --- STATS SECTION --- */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      text-align: center;
-    }
-    .stat-item h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 5px; }
-    .stat-item p { font-weight: 700; color: var(--text-light); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1.2px; }
-
-    /* --- FOOTER --- */
-    footer {
-      background: var(--secondary);
-      color: #9ca3af;
-      padding: 60px 0;
-      font-size: 0.95rem;
-    }
-    footer h3 { color: white; margin-bottom: 15px; }
-    footer a:hover { color: white; text-decoration: underline; }
-    
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .hero-content { grid-template-columns: 1fr; text-align: center; }
-      .hero h1 { font-size: 2.2rem; }
-      .hero p { margin: 0 auto 30px auto; }
-      .nav-links { display: none; } /* Simplified mobile handling */
-      .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-    }
   </style>
+  
 </head>
 <body>
 
-  <header>
-    <div class="container nav-wrapper">
-      <a href="{{ '/' | relative_url }}" class="brand">
-        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo">
-        <span>Baravalle<span style="color:var(--primary)">.DataSolver</span></span>
-      </a>
-      <nav class="nav-links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/mission' | relative_url }}">Mission</a>
-        <a href="{{ '/about' | relative_url }}">About</a>
-        <a href="{{ '/contact' | relative_url }}" class="btn-nav">Work With Me</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="container nav-wrapper">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo">
+      <span>Baravalle<span style="color:var(--primary)">.DataSolver</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="nav-item"><a href="{{ '/mission' | relative_url }}">Mission</a></li>
+        <li class="nav-item"><a href="{{ '/about' | relative_url }}">About</a></li>
+        
+        <li class="nav-item">
+          <a href="#">Services <i class="arrow"></i></a>
+          <div class="dropdown-menu">
+            <a href="{{ '/services/management' | relative_url }}">Data Management</a>
+            <a href="{{ '/services/analysis' | relative_url }}">Data Analysis</a>
+            <a href="{{ '/services/automation' | relative_url }}">Data Automation</a>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="{{ '/contact' | relative_url }}" class="btn-nav">Work With Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   {{ content }}
 
