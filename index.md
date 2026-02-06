@@ -7,9 +7,6 @@ permalink: /
 <div class="hero">
   <div class="container hero-content">
     <div>
-      <div style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 10px; color: var(--accent); font-weight: bold;">
-        Data Science Services
-      </div>
       <h1>Complex Data. <br><span style="color:var(--accent)">Clear Strategy.</span></h1>
       <p>I help organizations turn messy, high-dimensional data into reproducible assets. Scientific rigor, automated workflows, and actionable insights.</p>
       <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="color: white !important;">Schedule a Consultation</a>
