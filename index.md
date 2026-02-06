@@ -89,7 +89,7 @@ permalink: /
         <p style="color: var(--text-light);">
            With a background modeling neural networks in U.S. universities, I treat business data with the same scientific rigor. My goal is to empower your team to own their data journey—providing not just answers, but the tools to understand them.
         </p>
-        <a href="{{ '/about' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white; margin-top: 15px;">Read Full Bio</a>
+        <a href="{{ '/about' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important;; margin-top: 15px;">Read Full Bio</a>
       </div>
     </div>
   </div>
