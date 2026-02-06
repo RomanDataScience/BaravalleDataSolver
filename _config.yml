@@ -20,7 +20,7 @@ header_pages:
   - services.md
   - contact.md
 
-# Exclude verification file
-exclude:
-  - google6106a106b1e2c397.html
+# # Exclude verification file
+# exclude:
+#   - google6106a106b1e2c397.html
 
