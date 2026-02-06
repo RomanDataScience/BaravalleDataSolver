@@ -26,8 +26,8 @@ description: Advanced statistical analysis and predictive modeling services by D
     </div>
 
     <div style="margin-top: 60px; text-align: center;">
-      <a href="{{ '/contact' | relative_url }}" class="hero-btn">Inquire About Analysis Services</a>
-    </div>
+          <a href="{{ '/contact' | relative_url }}" class="hero-btn" style="background: var(--secondary); color: white !important; padding: 15px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">Inquire About Analysis Services</a>
+        </div>
     
   </div>
 </div>
