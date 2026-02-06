@@ -34,14 +34,27 @@
     h1, h2, h3 { margin-top: 0; line-height: 1.2; }
     a { text-decoration: none; color: inherit; transition: color 0.2s; }
 
-    /* --- LAYOUT UTILITIES --- */
+    /* --- LAYOUT UTILITIES (UPDATED) --- */
     .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 20px;
+      max-width: 1000px; /* Reduced from 1200px to bring content closer to center */
+      margin: 0 auto;    /* Centers the container */
+      padding: 0 60px;   /* Increased side padding (was 20px) */
     }
     
-    .section { padding: 80px 0; }
+    /* Adds more vertical space between white/gray sections */
+    .section { 
+      padding: 100px 0; /* Increased from 80px */
+    }
+
+    /* Mobile Adjustment: Keep margins smaller on phones so text fits */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 30px; /* Comfortable padding on mobile */
+      }
+      .section {
+        padding: 60px 0;
+      }
+    }
     .bg-offset { background-color: var(--bg-offset); }
 
     /* --- HEADER & NAV --- */
