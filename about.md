@@ -16,11 +16,11 @@ description: Learn about Dr. Roman Baravalle's background in Physics and Neurosc
       </p>
       
       <p>
-        My work focuses on practical data solutions: cleaning and organizing raw data, developing transparent and well-documented code, and building intuitive analyses that teams can understand, trust, and extend. I believe that good data science isn’t just about powerful tools—it’s about <strong>clarity, reproducibility, and shared understanding</strong>.
+        My work focuses on practical data solutions: cleaning and organizing raw data, developing transparent and well-documented code, and building intuitive analyses that teams can understand, trust, and extend. I believe that good data science isn’t just about powerful tools, it’s about <strong>clarity, reproducibility, and shared understanding</strong>.
       </p>
 
       <p>
-        Through clear data visualizations and hands-on guidance, I help teams build confidence in their computational workflows. My goal is simple: to empower clients to not only generate insights but to <strong>own their data journey</strong>, from raw input to meaningful discovery.
+        Through clear data visualizations and hands-on guidance, I help teams build confidence in their computational workflows. My goal is simple: to empower clients to not only generate insights but to <strong>own their data journey</strong>, from raw input to meaningful discovery. You can check more of my experience <a href="https://drive.google.com/file/d/1XeHeVdfZVNLmO1jyQF0HhKmWKNhUsTBQ/view?usp=sharing">here</a>.
       </p>
     </div>
 
