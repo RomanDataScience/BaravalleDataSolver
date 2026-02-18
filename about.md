@@ -20,7 +20,7 @@ description: Learn about Dr. Roman Baravalle's background in Physics and Neurosc
       </p>
 
       <p>
-        Through clear data visualizations and hands-on guidance, I help teams build confidence in their computational workflows. My goal is simple: to empower clients to not only generate insights but to <strong>own their data journey</strong>, from raw input to meaningful discovery. You can check more of my experience <a href="https://drive.google.com/file/d/1XeHeVdfZVNLmO1jyQF0HhKmWKNhUsTBQ/view?usp=sharing">here</a>.
+        Through clear data visualizations and hands-on guidance, I help teams build confidence in their computational workflows. My goal is simple: to empower clients to not only generate insights but to <strong>own their data journey</strong>, from raw input to meaningful discovery. You can check more of my experience <a href="https://drive.google.com/file/d/1XeHeVdfZVNLmO1jyQF0HhKmWKNhUsTBQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.
       </p>
     </div>
 
